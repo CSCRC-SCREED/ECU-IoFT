@@ -1,0 +1,31 @@
+name: ECU-IoFT
+description: Unmanned aerial vehicles (UAVs) are increasingly integrated into STEM education, but their cybersecurity vulnerabilities, particularly in low-end consumer drones, are a significant concern. The education sector's awareness of the risks to students and staff is often limited. To bridge this knowledge gap, the ECU-IoFT dataset has been developed, capturing three known cyber-attacks targeting Wi-Fi communications in an affordable drone. This initiative addresses the absence of publicly available, real-world datasets on cyberattacks in the Internet of Flying Things (IoFT). The dataset aims to aid cybersecurity researchers and UAV manufacturers in developing stronger defenses and more secure products, with plans to expand its scope to include more attacks and adapt it for big data analysis.
+contributors:
+  name: Mohiuddin Ahmed, David Cox, Benjamin Simpson & Aseel Aloufi
+data:
+  name: ECU-IoFT-Dataset.csv
+  path: ECU-IoFT/dataset/ECU-IoFT-Dataset.csv
+  format: Comma-Separated Values
+  md5: 7245a656013ad5dc08e94f5913d5caba
+  size: 9.1 MB
+  fields:
+name: ID
+description: Primary Key that uniquely identifies each entry in the dataset.
+name: Time
+description: Timestamp of the packet capture event.
+name: Source
+description: MAC address of the device that is sending the packet.
+name: Destination
+description: MAC address of the device that is the intended recipient of the packet.
+name: Protocol
+description: The type of protocol used for the packet transfer.
+name: Length
+description: The length of the packet in bytes.
+name: Info
+description: Detailed information about the packet, including the sequence number (SN), fragment number (FN), and flags indicating specific characteristics and commands within the packet.
+name: Type
+description: Indicates whether the traffic is normal or an attack, based on analysis.
+name: Type of Attack
+description: Specifies the nature of the traffic when it is identified as an attack.
+name: Attack Scenario
+description: Provides context or the category of the attack that is believed to be taking place.
